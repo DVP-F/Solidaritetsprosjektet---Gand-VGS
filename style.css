@@ -1,1 +1,9 @@
-
+*{
+    margin: 0;
+}
+#HeroSection{
+    background-image: "images/HeroSection.png";
+    color: white;
+    letter-spacing: 1.5px;
+    
+}
