@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    background-color: #000029;
+    color: white;
+}
+body{
+    flex-direction: column;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    font-family: "comic-serif-r";
+}
+#sectionLeft{
+    flex-direction: row;
+    display: flex;
+    justify-content: left;
+    align-content: top left;
+    align-items: top left;
+}
+#navLeft{
+    width: 15%;
+    align-items: left;
+    align-content: left;
+    justify-content: top;
+    display: flex;
+    margin-top: 0;
+    flex-direction: column;
+}
+#navLeftText{
+    position: absolute;
+    top: 10rem; left: 0;
+    background: transparent;
+    max-width: 14.9%;
+}
+.header{
+    color: calc(inherit - 010101);
+}
+.boxLeftLinks{
+    color: #ac0000;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    flex-direction: inherit;
+    margin-left: none;
+    padding-left: 1.5%;
+    margin-right: 3%;
+    cursor: pointer;
+    background: inherit;
+}
+a{
+    font-family: "comic-serif-r";
+    color: inherit;
+    text-decoration: inherit;
+    text-decoration-skip-ink: inherit;
+    flex-direction: inherit;
+    cursor: pointer;
+    background-color: transparent;
+}
+#textBody{
+    flex-direction: column;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'comic-serif-r';
+    src:url("../fonts/comic-serif.ttf"), url("../fonts/comic-serif.woff"), url("../fonts/comic-serif.woff2"), url("../fonts/comic-serif.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+#HeroSection{
+    position: relative;
+    text-align: center;
+    letter-spacing: 1.5px;
+    background-color: transparent;
+    text-align: center;
+}
+#Hero_Text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: inherit;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+#Hero_Desc{
+    background-color: inherit;
+}
+#Hero_Title{
+    background-color: inherit;
+}
+#Hero_Img{
+    width: 100%;
+    min-height: 10rem;
+}
+p1{
+    color: inherit;
+    text-indent: none;
+    align-self: inherit;
+}
+p{
+    color: inherit;
+}
+.list1{
+    list-style-type: symbols(fixed "u+00bb");
+}
+li{
+    list-style-type: inherit;
+}
