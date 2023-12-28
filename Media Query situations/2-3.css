@@ -1,0 +1,7 @@
+@media screen and (max-device-width: 480px) {
+    .column {
+        float: none;
+    }
+}
+
+@import url("shetland.css") screen and (max-device-width: 480px);

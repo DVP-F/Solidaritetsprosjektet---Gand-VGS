@@ -1,106 +1,162 @@
-*{
-    margin: 0;
-    background-color: #000029;
-    color: white;
-}
-body{
-    flex-direction: column;
-    display: flex;
-    justify-content: left;
-    align-content: center;
-    font-family: "comic-serif-r";
-}
-#sectionLeft{
-    flex-direction: row;
-    display: flex;
-    justify-content: left;
-    align-content: top left;
-    align-items: top left;
-}
-#navLeft{
-    width: 15%;
-    align-items: left;
-    align-content: left;
-    justify-content: top;
-    display: flex;
-    margin-top: 0;
-    flex-direction: column;
-}
-#navLeftText{
-    position: absolute;
-    top: 10rem; left: 0;
-    background: transparent;
-    max-width: 14.9%;
-}
-.header{
-    color: calc(inherit - 010101);
-}
-.boxLeftLinks{
-    color: #ac0000;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    flex-direction: inherit;
-    margin-left: none;
-    padding-left: 1.5%;
-    margin-right: 3%;
-    cursor: pointer;
-    background: inherit;
-}
-a{
-    font-family: "comic-serif-r";
-    color: inherit;
-    text-decoration: inherit;
-    text-decoration-skip-ink: inherit;
-    flex-direction: inherit;
-    cursor: pointer;
-    background-color: transparent;
-}
-#textBody{
-    flex-direction: column;
-    text-decoration: none;
-}
-@font-face {
-    font-family: 'comic-serif-r';
-    src:url("../fonts/comic-serif.ttf"), url("../fonts/comic-serif.woff"), url("../fonts/comic-serif.woff2"), url("../fonts/comic-serif.otf");
-    font-weight: normal;
-    font-style: normal;
-}
-#HeroSection{
-    position: relative;
-    text-align: center;
-    letter-spacing: 1.5px;
-    background-color: transparent;
-    text-align: center;
-}
-#Hero_Text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: inherit;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-#Hero_Desc{
-    background-color: inherit;
-}
-#Hero_Title{
-    background-color: inherit;
-}
-#Hero_Img{
-    width: 100%;
-    min-height: 10rem;
-}
-p1{
-    color: inherit;
-    text-indent: none;
-    align-self: inherit;
-}
-p{
-    color: inherit;
-}
-.list1{
+@media screen and (max-device-width: 1920px){
+    *{
+        margin: 0;
+        background-color: #080022ff;
+        color: white;
+        scrollbar-width: 0;
+    }
+    body{
+        flex-direction: column;
+        display: flex;
+        justify-content: left;
+        align-content: center;
+        font-family: "comic-serif-r";
+        background: none;
+    }
+    #sectionLeft{
+        flex-direction: row;
+        display: flex;
+        justify-content: left;
+        align-content: top left;
+        align-items: top left;
+    }
+    #navLeft{
+        width: 12vw;
+        align-items: left;
+        align-content: left;
+        justify-content: top;
+        display: flex;
+        margin-top: 0vh;
+        flex-direction: column;
+    }
+    #navLeftText{
+        position: absolute;
+        top: 11vw; left: 0;
+        background: transparent;
+        width: 12vw;
+        font-size: 1.15vw;
+        padding-left: 0.16vw;
+    }
+    .imgPrimary{
+        position: absolute;
+        top: 11vw;
+        margin-top: -1vh;
+        width: 12vw;
+    }
+    .imgSecondary{
+        margin: inherit;
+        position: absolute;
+        top: 0vh;
+        clip-path: margin-box;
+        visibility: hidden;
+    }
+    .header{
+        color: calc(inherit - 010101);
+    }
+    .boxLeftLinks{
+        color: rgb(255, 0, 0);
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        flex-direction: inherit;
+        margin-left: none;
+        padding-left: 0.16vw;
+        margin-right: 3vw;
+        cursor: pointer;
+        background: inherit;
+        text-shadow: -0.04vw -0.04vw 0 #fff, 0.04vw -0.04vw 0 #fff, -0.04vw 0.04vw 0 #fff, 0.04vw 0.04vw 0 #fff;
+    }
+    a{
+        font-family: "comic-serif-r";
+        color: inherit;
+        text-decoration: inherit;
+        text-decoration-skip-ink: inherit;
+        flex-direction: inherit;
+        cursor: pointer;
+        background: inherit;
+    }
+    #textBody{
+        flex-direction: column;
+        width: 89vw;
+        text-decoration: none;
+        font-size: 1.15vw;
+        padding-left: 0.4vw;
+        padding-top: 0.6vh;
+        margin-top: -0.6vh;
+        background: radial-gradient(ellipse at bottom right, #000022, transparent), 
+        radial-gradient(circle at left, #000, transparent), 
+        radial-gradient(ellipse, #120534, transparent), 
+        linear-gradient(45deg, #004546ff, transparent), 
+        linear-gradient(270deg, rgb(0,26,28), transparent);
+    }
+    @font-face {
+        font-family: 'comic-serif-r';
+        src:url("../fonts/comic-serif.ttf"), url("../fonts/comic-serif.woff"), 
+        url("../fonts/comic-serif.woff2"), url("../fonts/comic-serif.otf");
+        font-weight: normal;
+        font-style: normal;
+    }
+    #HeroSection{
+        position: relative;
+        text-align: center;
+        letter-spacing: 0.055vw;
+        background: none;
+        text-align: center;
+        margin: 0;
+    }
+    #Hero_Text{
+        font-size: 1.5vw;
+        position: absolute;
+        top: 5.5vw;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        background: inherit;
+        text-shadow: -0.07vw -0.07vw 0 #000, 0.07vw -0.07vw 0 #000, -0.07vw 0.07vw 0 #000, 0.07vw 0.07vw 0 #000;
+    }
+    #Hero_Desc{
+        background: inherit;
+    }
+    #Hero_Title{
+        background: inherit;
+    }
+    #Hero_Img{
+        width: 100vw;
+        height: 10.52vw;
+        background-clip: border-box;
+    }
+    p1{
+        color: inherit;
+        text-indent: none;
+        align-self: inherit;
+    }
+    p{
+        color: inherit;
+        background: inherit;
+    }
+    .list1{
     list-style-type: symbols(fixed "u+00bb");
+    }
+    li{
+        list-style-type: inherit;
+    }
+    ul, ol, li{
+        margin-left: 2vw;
+        padding: 0;
+        margin-top: 0; margin-bottom: 0; margin-right: 0;
+        background: inherit;
+    }
+    h3{
+        background: inherit;
+    }
+    .vignette {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 200px rgba(0,0,0,1) inset;
+    }
 }
-li{
-    list-style-type: inherit;
+
+@media screen and (max-device-width: 720px){
+
 }
